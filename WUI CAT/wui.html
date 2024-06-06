@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barista Cafe</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css?v=1.1" rel="stylesheet">
+</head>
+<body class="font-sans">
+    <header class="bg-gray-800 text-white">
+        <nav class="container mx-auto p-4 flex justify-between">
+            <div class="text-2xl font-bold">Barista</div>
+            <ul id="navLinks" class="hidden space-x-4 md:flex">
+                <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#menu" class="hover:text-gray-400">Menu</a></li>
+                <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            </ul>
+            <!-- thi is the burger icon as required-->
+            <div class="block md:hidden" onclick="toggleNavLinks()">
+                <img src="./burger.png" class="w-8" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section id="hero" class="bg-cover bg-center h-screen flex items-center" style="background-image: url('./Coffee.webp');">
+    <div class="container mx-auto px-4 md:px-8 lg:px-16">
+        <div class="text-left text-white max-w-lg">
+            <h1 class="text-5xl font-bold">Welcome to Barista Cafe</h1>
+            <p class="text-2xl mt-4">Delicious coffee and homemade treats</p>
+           <button> <a href="#contact" class="mt-8 inline-block px-6 py-3 bg-transparent border-2 hover:bg-white  border-white text-white rounded-lg text-lg font-semibold hover:text-black transition duration-300">Contact Us</a></button>
+        </div>
+    </div>
+</section>
+
+
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">About Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- History -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Our History</h3>
+                    <p class="text-lg">Barista Cafe was established in 2010 with a mission to serve the best coffee and homemade treats in a cozy environment. Over the years, we have grown into a beloved spot for locals and visitors alike.</p>
+                </div>
+                <!-- Mission -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                    <p class="text-lg">Our mission is to create a welcoming space for everyone to enjoy high-quality coffee and delicious homemade food. We are committed to sustainability and supporting local farmers and suppliers.</p>
+                </div>
+                <!-- Values -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Our Values</h3>
+                    <p class="text-lg">At Barista Cafe, we value community, quality, and sustainability. We believe in building strong relationships with our customers and our community, and we strive to make a positive impact through our business practices.</p>
+                </div>
+                <!-- Community -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Community Engagement</h3>
+                    <p class="text-lg">We actively engage with our community through events, partnerships with local organizations, and support for local artists and musicians. Our café is a hub for creativity and connection.</p>
+                </div>
+                <!-- Sustainability -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Sustainability</h3>
+                    <p class="text-lg">We are dedicated to sustainable practices, from sourcing our coffee beans to using eco-friendly packaging. Our goal is to reduce our environmental footprint and contribute to a healthier planet.</p>
+                </div>
+                <!-- Team -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4">Our Team</h3>
+                    <p class="text-lg">Our team is passionate about coffee and committed to providing exceptional service. We believe in continuous learning and strive to create a positive and inclusive workplace for all our employees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Our Menu</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Repeat this block for each menu item -->
+                <div class="border p-4 rounded-lg shadow-lg">
+                    <img src="./Battle Of Beverages_ Tea v_s Coffee, Which Is Better_.jpeg" alt="Menu Item" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Espresso</h3>
+                    <p class="text-lg">A strong and concentrated coffee</p>
+                    <p class="text-xl font-bold mt-2">$13</p>
+                </div>
+                
+                <div class="border p-4 rounded-lg shadow-lg">
+                    <img src="./Baristas Coffee Responsive OpenCart Theme.jpeg" alt="Menu Item" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Cappuccino</h3>
+                    <p class="text-lg">An Italian coffee drink</p>
+                    <p class="text-xl font-bold mt-2">$15</p>
+                </div>
+                
+                <div class="border p-4 rounded-lg shadow-lg">
+                    <img src="./Mocha recipe.jpeg" alt="Menu Item" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Latte</h3>
+                    <p class="text-lg">Made with espresso and steamed milk</p>
+                    <p class="text-xl font-bold mt-2">$10</p>
+                </div>
+                
+                <div class="border p-4 rounded-lg shadow-lg">
+                    <img src="./coddd.jpg" alt="Menu Item" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Cake</h3>
+                    <p class="text-lg">Fried dough confection</p>
+                    <p class="text-xl font-bold mt-2">$19</p>
+                </div>
+                
+                <div class="border p-4 rounded-lg shadow-lg">
+                    <img src="./foodforcoffee.jpg" alt="Menu Item" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Muffin</h3>
+                    <p class="text-lg">Sweet baked treat</p>
+                    <p class="text-xl font-bold mt-2">$14</p>
+                </div>
+                
+                <div class="border p-4 rounded-lg shadow-lg">
+                    <img src="./donuts.jpg" alt="Menu Item" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-2xl font-bold mb-2">Donut</h3>
+                    <p class="text-lg">Buttery and flaky pastry</p>
+                    <p class="text-xl font-bold mt-2">$12</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+            <p class="text-lg mb-4">Feel free to reach out to us for any inquiries or reservations.</p>
+            <form class="max-w-md mx-auto">
+                <div class="mb-4">
+                    <input type="text" placeholder="Name" class="w-full p-3 border rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email" class="w-full p-3 border rounded-lg">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Message" class="w-full p-3 border rounded-lg h-32"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-gray-800 text-white p-3 rounded-lg">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2024 Barista Cafe. All rights reserved.</p>
+    </footer>
+    <script>
+        // the function to display nav links in block form after clicking the burger icon
+        function toggleNavLinks() {
+            var navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

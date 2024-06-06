@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #343a40;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar a {
+    color: #ffffff !important;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.task {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.task h3 {
+    margin-top: 0;
+}
+
+.btn-custom {
+    background-color: #343a40;
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #495057;
+}
